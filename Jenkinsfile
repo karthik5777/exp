@@ -32,7 +32,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'scp target/experian.war root@172.31.89.105:/root/distros/apache-tomcat-10.1.41/webapps'
+		sh 'scp target/experian.war root@172.31.89.10:/root/distros/apache-tomcat-10.1.41/webapps'
 	}
     }
 }
